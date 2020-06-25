@@ -1,0 +1,17 @@
+[
+    {
+        "employeeFName": "Jason",
+        "employeeLName": "Smith",
+        "occupation": "Janitor"
+    },
+    {
+        "employeeFName": "Mike",
+        "employeeLName": "Rodriguez",
+        "occupation": "CEO"
+    },
+    {
+        "employeeFName": "Joe",
+        "employeeLName": "Gonzalez",
+        "occupation": "Window Washer"
+    }
+]
