@@ -15,13 +15,21 @@ class App extends React.Component {
     this.setState({ employees: this.state.employees.sort((a, b) => { return a.employeeLName.localeCompare(b.employeeLName) }) })
   }
 
+  handleFirstName = () => {
+    console.log("hi")
+    this.setState({ employees: this.state.employees.sort((a, b) => { return b.employeeFName.localeCompare(a.employeeFName) }) })
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
 
+          <button onClick={this.handleFirstName}>First Name</button>
           <button onClick={this.handleLastName}>Last Name</button>
+          <search placeholder={"type a name"}></search>
+
 
           {
             this.state.employees.map((employee, index) => {
